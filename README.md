@@ -1,46 +1,73 @@
-# Getting Started with Create React App
+# User Registration and Insurance Selection Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web application allows users to register and select insurance options. It is divided into several pages, each with specific functionality and validation rules.
 
-## Available Scripts
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Integration](#api-integration)
 
-In the project directory, you can run:
+## Features
+---
 
-### `yarn start`
+### User Registration
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Users can register with the following details:
+  - First Name
+  - Last Name
+  - Mobile Number
+  - Password
+- Validation rules for user registration:
+  - All fields are mandatory.
+  - Mobile numbers must be in the correct format.
+  - First and last names should only contain Persian (Farsi) characters.
+  - Passwords must be complex (at least one number, one uppercase Latin character, one lowercase Latin character, and 4 to 10 characters in length).
+- Error messages are displayed for each validation error.
+- Mock user registration is available, displaying the user's first name and last name in the Navbar upon successful registration.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Insurance Selection
+- Users can select insurance options, including:
+  - Third-Party Insurance
+  - Comprehensive Insurance
+- Selections are visually represented, and users can easily switch between options.
 
-### `yarn test`
+### Vehicle Selection
+- Using the `getVehicleTypes` API, the application fetches various car types from the server.
+- Users can choose their car type and model from the available options.
+- The "Back" button is always active, allowing users to return to the previous page.
+- The "Next Step" button becomes active when users select options correctly, taking them to the next page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Insurance Company Selection
+- Using the `getInsureCompanies` API, the application retrieves a list of insurance companies.
+- Users can select their preferred insurance company from the list of options.
 
-### `yarn build`
+### Discounts and Summary
+- Using the `getThirdDiscounts` API, the application fetches third-party insurance discounts and driver accident discounts.
+- Users can select applicable discounts.
+- By clicking the "Check Summary" button, a modal displays a summary of the entered information from the first page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone this repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/samanabasi/car-insurance.git
+   cd car-insurance
+```
+   
+## Usage
+To start the web application, run:
 
-### `yarn eject`
+  ```bash
+    yarn
+    yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## API Integration
+For the proper functioning of this application, you'll need to set up the following APIs or server endpoints:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+getVehicleTypes: An API to fetch car types from the server.
+getInsureCompanies: An API to retrieve a list of insurance companies.
+getThirdDiscounts: An API to fetch third-party insurance discounts and driver accident discounts.
