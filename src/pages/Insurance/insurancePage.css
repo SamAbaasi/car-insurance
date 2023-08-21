@@ -1,0 +1,15 @@
+.insurancePage {
+    width: 100%;
+}
+.steps-btn__container {
+    display: flex;
+    justify-content: space-between;
+}
+.btn-container {
+    margin-top: 10px;
+}
+.lastStep {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}

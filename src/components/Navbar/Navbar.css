@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.profile {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+}
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+}
+@media screen and (max-width: 576px) {
+    .pageTitle {
+        display: none;
+    }
+}

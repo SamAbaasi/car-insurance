@@ -1,0 +1,26 @@
+.insuranceTypeForm {
+    display: flex;
+}
+.mr-4 {
+    margin-right: 16px;
+}
+.insurance-btn {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 12px;
+}
+.disabled-btn {
+    color: #ccc;
+}
+.disabled-svg {
+    /* filter: invert(1); */
+    filter: invert(92%) sepia(0%) saturate(1734%) hue-rotate(350deg) brightness(96%) contrast(78%);
+}

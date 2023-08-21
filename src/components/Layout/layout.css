@@ -1,0 +1,63 @@
+.surface {
+    width: 100vw;
+    height: 200px;
+    background: #fff3c0;
+    opacity: 0.5;
+    z-index: -1;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}
+.layout {
+    display: flex;
+    flex-direction: column;
+}
+.children {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.car {
+    width: 50vw;
+    animation:suspension 1s linear infinite, moveRight 1s linear;
+    position: absolute;
+    left: 20px;
+    bottom: 180px;
+}
+@keyframes moveRight {
+    100% {
+        transform: translateX(20px);
+    }
+    0% {
+        transform: translateX(-1020px);
+    }
+}
+@keyframes suspension {
+    100% {
+        transform: translateY(-1px);
+    }
+    50% {
+        transform: translateY(1px);
+    }
+    0% {
+        transform: translateY(-1px);
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .children {
+        width: 50vw;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .surface {
+        width: 200px;
+        height: 100vh;
+    }
+    .car {
+        left: 40px;
+        bottom: 40px;
+    }
+}

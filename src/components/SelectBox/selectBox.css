@@ -1,0 +1,64 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border: 1px solid #25b79b;
+    background: #25b79b;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 120px;
+}
+.btn-title {
+    color: #fff;
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.outlined {
+    background: #fff;
+    border-color: #25b79b;
+}
+.outlined .btn-title {
+    color: #25b79b;
+}
+.arrow-right {
+    transform: rotate(180deg);
+}
+.btn-disabled {
+    cursor:auto;
+    border: 1px solid #ccc;
+    background: #ccc;
+}
+.btn-disabled .btn-title {
+    color: #333;
+}
+
+.selectbox {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 5px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.styled-select select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+.col-2 {
+    width: 100%;
+}
+.ml-2 {
+    margin-left: 10px;
+}
+@media screen and (min-width: 576px) {
+    .col-2 {
+        width: calc(50% - 5px);
+    }
+}

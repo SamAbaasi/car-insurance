@@ -1,0 +1,11 @@
+.InsuransePageSkeleton {
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        &--last {
+            justify-content: flex-end;
+        }
+    }
+
+}
