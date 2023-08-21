@@ -12,7 +12,7 @@ function App() {
         <Router>
           <Routes>
             <Route element={<PrivateRoutes />}>
-              <Route element={<InsurancePage />} path='/insurance' />
+              <Route element={<InsurancePage />} path='/' />
             </Route>
             <Route element={<Signup />} path='/signup' />
           </Routes>

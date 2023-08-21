@@ -28,7 +28,7 @@ export const Signup = () => {
   }
   useEffect(() => {
     if(isAuthenticated) {
-      navigate('/insurance')
+      navigate('/')
     }
   }, [isAuthenticated, navigate])
   return (
