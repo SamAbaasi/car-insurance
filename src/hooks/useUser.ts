@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useLocalStorage } from "./useLocalStorage";
 
 export type User = {
