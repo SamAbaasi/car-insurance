@@ -6,32 +6,62 @@ This web application allows users to register and select insurance options. It i
 
 **Live Demo**: [View Live Demo](https://car-insurance-blue.netlify.app/)
 
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [API Integration](#api-integration)
+## Getting Started
 
-## Installation
+To begin using this Vendors List application, follow these simple steps:
 
-Clone this repository:
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/samanabasi/car-insurance.git
+    cd car-insurance
+
+
+2. Install the dependencies:
 
    ```bash
-   git clone https://github.com/samanabasi/car-insurance.git
-   cd car-insurance
-```
----
-
-## Usage
-To start the web application, run:
-
-  ```bash
     yarn
+
+
+3. Start the development server:
+
+   ```bash
     yarn start
+
+
+## Folder Structure
+
+The project structure is organized as follows:
+car-insurance/
+ ```
+├── src/
+│ ├── assets/ # Contains assets and icons
+│ ├── components/ # Reusable components
+│ ├── context/ # Utility functions and constants
+│ ├── hooks/ # Reusable hooks such as useAuth
+│ ├── pages/ # pages
+│ ├── utils/ # Utility functions and constants
+│ ├── App.tsx # Main application component
+│ ├── index.tsx # Entry point
+│ └── ... # Other files and folders
+├── public/: # Includes public assets and static files.
+├── package.json and package-lock.json: Define project dependencies and versions.
+└── README.md # You're currently reading it! This README provides detailed information about the project's structure, features, and usage.
 ```
----
+## Technologies Used
+
+This Car Insurance application leverages various technologies and libraries to deliver a powerful and responsive user experience. Here's a list of the key technologies used:
+
+- React.js: A JavaScript library for building user interfaces.
+- React Hook Form: A package that makes form validation easy by aligning with the existing HTML standard for form validation.
+- TypeScript: A typed superset of JavaScript that enhances code quality and maintainability.
+- React Loading Skeleton: A library for displaying skeleton loading UI.
+- React Modal: Accessible modal dialog component for React.JS.
+- Create React App: A boilerplate for setting up a React application.
+- SASS: A preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets.
 
 ## Features
+This Car Insurance application comes packed with features that make it a powerful tool for managing and visualizing data. Here's a glimpse of some of the key features:
 
 ### User Registration
 
@@ -69,7 +99,6 @@ To start the web application, run:
 - Users can select applicable discounts.
 - By clicking the "Check Summary" button, a modal displays a summary of the entered information from the first page.
 
----
 
 ## API Integration
 For the proper functioning of this application, you'll need to set up the following APIs or server endpoints:
@@ -77,3 +106,11 @@ For the proper functioning of this application, you'll need to set up the follow
 getVehicleTypes: An API to fetch car types from the server.
 getInsureCompanies: An API to retrieve a list of insurance companies.
 getThirdDiscounts: An API to fetch third-party insurance discounts and driver accident discounts.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code according to your needs.
