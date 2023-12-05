@@ -2,14 +2,36 @@
 
 This web application allows users to register and select insurance options. It is divided into several pages, each with specific functionality and validation rules.
 
+## Demo
+
+**Live Demo**: [View Live Demo](https://car-insurance-blue.netlify.app/)
+
 ## Table of Contents
-- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Features](#features)
 - [API Integration](#api-integration)
 
-## Features
+## Installation
+
+Clone this repository:
+
+   ```bash
+   git clone https://github.com/samanabasi/car-insurance.git
+   cd car-insurance
+```
 ---
+
+## Usage
+To start the web application, run:
+
+  ```bash
+    yarn
+    yarn start
+```
+---
+
+## Features
 
 ### User Registration
 
@@ -48,22 +70,6 @@ This web application allows users to register and select insurance options. It i
 - By clicking the "Check Summary" button, a modal displays a summary of the entered information from the first page.
 
 ---
-## Installation
-
-Clone this repository:
-
-   ```bash
-   git clone https://github.com/samanabasi/car-insurance.git
-   cd car-insurance
-```
-   
-## Usage
-To start the web application, run:
-
-  ```bash
-    yarn
-    yarn start
-```
 
 ## API Integration
 For the proper functioning of this application, you'll need to set up the following APIs or server endpoints:
